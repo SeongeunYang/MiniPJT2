@@ -1,0 +1,57 @@
+.wrapper {
+    width: 75%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.post-info {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    width: 17%;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    width: 100%;
+}
+
+.inputPostInfo {
+    height: 30%;
+    width: 70%;
+    border-width: 0px 0px 3px 0px;
+    outline: none;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.save-btn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: right;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    border: 3px solid #1c3b84;
+    border-radius: 10px;
+    background-color: #1c3b84;
+    color: white;
+}
+
+.post-textarea-div {
+    width: 100%;
+    height: 500px;
+}
+
+.post-textarea {
+    width: 100%;
+    height: 400px;
+    border: 3px solid #a8deff;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #a8deff;
+}

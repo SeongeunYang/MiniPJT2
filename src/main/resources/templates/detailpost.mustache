@@ -1,0 +1,11 @@
+{{>layout/header}}
+<main class="postlist-wrap">
+    <div class="wrapper">
+        <button class="save-btn" onclick="deletePost()" type="button">삭제하기</button>
+        <h2 id="postId"> 글번호 : {{post.id}}</h2>
+        <h1 class="post-title">제  목 : {{post.title}}</h1>
+        <br><h1 class="post-author">작성자 : {{post.author}}</h1>
+        <div class="post-content">{{ post.content }}</div>
+    </div>
+</main>
+{{>layout/footer}}

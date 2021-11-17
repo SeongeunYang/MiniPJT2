@@ -1,0 +1,16 @@
+#footer {
+    margin-top:100px;
+    width:100%;
+    background: #1c3b84;
+    color: white;
+}
+.footerwrap {
+    display:flex;
+    width: 100%;
+    justify-content:center;
+}
+.footerwrap p {
+    font-size:30px;
+    font-weight:900;
+    line-height:160px;
+}

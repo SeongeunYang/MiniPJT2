@@ -1,0 +1,14 @@
+{{>layout/header}}
+<main class="postlist-wrap">
+    <div class="wrapper">
+        <button class="save-btn" onclick="writing()" type="button">저장하기</button>
+        <div class="post">
+            <h1 class="post-info">제  목 :</h1><input class="inputPostInfo" type="text" id="postTitle">
+            <br><h1 class="post-info">작성자 :</h1><input class="inputPostInfo" type="text" id="postAuthor">
+        </div>
+        <div class="post-textarea-div"> <!-- 코멘트를 입력할 수 있는 공간 -->
+            <textarea class="post-textarea" id="postContent"></textarea>
+        </div>
+    </div>
+</main>
+{{>layout/footer}}

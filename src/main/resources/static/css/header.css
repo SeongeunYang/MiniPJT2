@@ -1,0 +1,19 @@
+#header {
+    display:flex;
+    justify-content:center;
+    margin-bottom:100px;
+    background:#1c3b84;
+    height: 170px;
+}
+
+.logo {
+    display:flex;
+    margin: 0px;
+    align-items:center;
+}
+.logo a {
+    height: 160px;
+}
+.logo a img {
+    height: 100%;
+}
