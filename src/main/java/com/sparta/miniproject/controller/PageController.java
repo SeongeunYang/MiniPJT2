@@ -1,11 +1,9 @@
 package com.sparta.miniproject.controller;
 
-import com.sparta.miniproject.domain.Post;
 import com.sparta.miniproject.domain.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
