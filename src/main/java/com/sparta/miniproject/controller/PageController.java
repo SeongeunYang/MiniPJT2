@@ -13,6 +13,7 @@ public class PageController {
 
     private final PostRepository postRepository;
 
+    //글 목록 페이지 로드
     @RequestMapping(value = "/")
     public String main(Model model) {
         model.addAttribute("posts", postRepository.findAllByOrderByCreateAtDesc());
@@ -26,7 +27,7 @@ public class PageController {
     }
 
     //글 상세 조회 페이지로 이동
-    @RequestMapping("/posts/{id}") // -> service로 구현해야할까? 고민..
+    @RequestMapping("/posts/{id}")
     public String getPostDetail(@PathVariable Long id, Model model){
         model.addAttribute("post", postRepository.findById(id).orElseThrow(
                 () -> new NullPointerException("해당 게시글을 불러올 수 없습니다.")
