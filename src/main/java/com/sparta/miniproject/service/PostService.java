@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @RequiredArgsConstructor
 @Service
@@ -20,5 +21,10 @@ public class PostService {
         );
         post.update(requestDto);
         return post.getId();
+    }
+
+    @Transactional
+    public List<Post> searchPosts(String keyword){
+        return postRepository.findByTitleContaining(keyword);
     }
 }

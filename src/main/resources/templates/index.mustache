@@ -4,6 +4,13 @@
         나만의 게시판 : 원하는 글을 올려보세요 ✍🏻
     </div>
 
+    <form action="/posts/search" method="GET">
+        <div class="searchBox">
+            <input class="searchInput" name="keyword" type="text" placeholder="검색어를 입력해주세요">
+            <button class="searchBtn">검색하기</button>
+        </div>
+    </form>
+
     <div class="tablearea">
         <table class="table table-hover table-horizontal table-bordered">
             <thead class="thead-strong">
